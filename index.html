@@ -11,7 +11,7 @@
 		clear: both;
 	}
 	body{
-		background-color: #ececec;
+		background-image: linear-gradient(gray,white,gray);
 	}
 	#page{
 		margin: auto;
@@ -22,7 +22,7 @@
 		height: 120px;
 		background-color: #000000;
 		border: solid 1px #cccccc;
-	}
+	}	
 	#login{
 		float: right;
 		padding: 10px 20px;
@@ -45,7 +45,7 @@
 	}
 	nav{
 		width: 1000px;
-		background-color: orange;
+		background-image: linear-gradient(to right,#ff9999,#ff9966,#ff9933,#ff9900,#ff9933,#ff9966,#ff9999);
 		height: 40px;
 		font-weight: bold;
 		padding-top: 20px;
@@ -97,16 +97,24 @@
 	}
 	.dropdown{
 		display: inline-block;
+
 	}
 	.dropdowncontents{
 		display: none;
-		background-color: orange;
 		position: absolute;
 		width: 155px;
-		padding: 30px 30px; 
+		padding: 30px 30px; 	
 	}
+	#g1{background-image: linear-gradient(to right,#ff9999,#ff9966);}
+	#g2{background-image: linear-gradient(to right,#ff9966,#ff9933);}
+	#g3{background-image: linear-gradient(to right,#ff9933,#ff9900);}
+	#g4{background-image: linear-gradient(to right,#ff9933,#ff9966);}
+	#g5{background-image: linear-gradient(to right,#ff9966,#ff9999);}
 	.dropdown:hover .dropdowncontents{
 		display: block;
+	}
+	ul:hover{
+
 	}
 </style>
 </head>
@@ -114,12 +122,12 @@
 <div id="page">
 	<header><span id="center">TRAVEL</span><img src="./img/j.PNG" width="30">
 		<div id="login">
-			<a href="./MemberLogin.html">로그인</a>| 회원가입  | 마이페이지 
+			로그인 | 회원가입 | 마이페이지 
 		</div>
 	</header>
 	<nav>
 		<div class="dropdown">
-<ul>추천여행지<div class="dropdowncontents">
+		<ul>추천여행지<div class="dropdowncontents" id="g1">
 			<li>20대추천여행지</li><br>
 			<li>30대추천여행지</li><br>
 			<li>40대추천여행지</li><br>
@@ -128,38 +136,38 @@
 		</div>
 		</ul>
 		<div class="dropdown">
-		<ul>나만의여행지<div class="dropdowncontents">
+		<ul>나만의여행지<div class="dropdowncontents" id="g2">
 			<li>찜한여행지</li><br>
-			<li>30대추천여행지</li><br>
-			<li>40대추천여행지</li><br>
-			<li>노후추천여행지</li>
+			<li>나를위한추천</li><br>
+			<li>나의태마여행지</li><br>
+			<li>안성맞춤여행지</li>
 		</div>
 		</div>
 		</ul>
 		<div class="dropdown">
-		<ul>주간BEST<div class="dropdowncontents">
-			<li>20대추천여행지</li><br>
-			<li>30대추천여행지</li><br>
-			<li>40대추천여행지</li><br>
-			<li>노후추천여행지</li>
+		<ul>주간BEST<div class="dropdowncontents" id="g3">
+			<li>주간아시아</li><br>
+			<li>주간유럽</li><br>
+			<li>주간미국</li><br>
+			<li>주간동남아</li>
 		</div>
 		</div>
 		</ul>
 		<div class="dropdown">
-		<ul>특별이벤트<div class="dropdowncontents">
-			<li>응모이벤트</li><br>
-			<li>3진행중인이벤트</li><br>
+		<ul>특별이벤트<div class="dropdowncontents" id="g4">
+			<li><a href="./random.html"> 응모이벤트</a></li><br>
+			<li>진행중인이벤트</li><br>
 			<li>당첨자확인</li><br>
-			<li>MORE</li>
+			<li><a href="./park.html">진행중인박람회</a></li>
 		</div>
 		</div>
 		</ul>
 		<div class="dropdown">
-		<ul>고객센터<div class="dropdowncontents">
-			<li><a href="./second.html">마이페이지</a></li><br>
+		<ul>고객센터<div class="dropdowncontents" id="g5">
 			<li>고객의소리</li><br>
-			<li></li><br>
-			<li>노후추천여행지</li>
+			<li>마이페이지</li><br>
+			<li>접수된문의사항</li><br>
+			<li>MORE</li>
 		</div>
 		</div>
 		</ul>
@@ -182,7 +190,7 @@
 <div class="clear"></div>	
 	<section class="mr mb mt"><img src="./img/food.PNG" width="310" height="250"></section>
 	<section class="ml mr mt mb"><img src="./img/marry.PNG" width="300" height="250"></section>
-	<section class="ml mt mb"><img src="./img/sports.PNG" width="340" height="250"></section>
+	<section class="ml mt mb"><a href="./soccertravel.html"><img src="./img/sports.PNG" width="340" height="250"></a></section>
 	<section class="mr"><img src="./img/healing.PNG" width="480" height="250"></section>
 	<section class="mr"><img src="./img/son.PNG" width="250" height="250"></section>
 	<section><img src="./img/more.PNG" width="240" height="250"></section>
