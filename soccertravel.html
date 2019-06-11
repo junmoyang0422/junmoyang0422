@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+<style type="text/css">
+	*{
+		padding: 0 0;
+		margin: 0 0;
+	}
+	.clear{
+		clear: both;
+	}
+	body{
+		background-image: linear-gradient(gray,white,gray);
+	}
+	#page{
+		margin: auto;
+		width: 1000px;
+	}
+	header{
+		width: 1000px; 
+		height: 120px;
+		background-color: #000000;
+		border: solid 1px #cccccc;
+	}	
+	#login{
+		float: right;
+		padding: 10px 20px;
+		color: white;
+	}
+	#center{
+		padding-left:350px;
+		font-size: 50px;
+		font-weight: bold;
+		color: white;
+	}
+	li{
+		list-style-type: none;
+	}
+	nav ul{
+		display: inline;
+		margin: 50px;
+		padding-left: 5px;
+		padding-right: 5px; 
+	}
+	nav{
+		width: 1000px;
+		background-image: linear-gradient(to right,#ff9999,#ff9966,#ff9933,#ff9900,#ff9933,#ff9966,#ff9999);
+		height: 40px;
+		font-weight: bold;
+		padding-top: 20px;
+		border: solid 1px #cccccc;
+	}
+	nav li{
+		font-size:20px;
+	}
+	.dropdown{
+		display: inline-block;
+
+	}
+	.dropdowncontents{
+		display: none;
+		position: absolute;
+		width: 155px;
+		padding: 30px 30px; 	
+	}
+	footer{
+		width: 1000px;
+		height: 100px;
+		margin-top: 10px;
+		border: solid 1px #cccccc;
+		background-color:  gray;
+		font-weight: bold;
+	}
+	#address{
+		float: left;
+		margin-top: 30px 0 0 20px;
+	}
+	#customer{
+		float: right;
+		margin-top: 30px 0 0 180px;
+	}
+	#g1{background-image: linear-gradient(to right,#ff9999,#ff9966);}
+	#g2{background-image: linear-gradient(to right,#ff9966,#ff9933);}
+	#g3{background-image: linear-gradient(to right,#ff9933,#ff9900);}
+	#g4{background-image: linear-gradient(to right,#ff9933,#ff9966);}
+	#g5{background-image: linear-gradient(to right,#ff9966,#ff9999);}
+	.dropdown:hover .dropdowncontents{
+		display: block;
+	}
+	section img{
+		width: 100px;
+		height: 100px;
+		transition: width 2s, transform 2s;
+		transition-timing-function: ease;
+	}
+	section img:hover{
+		width: 250px;
+		height: 250px;
+		transform: rotate(360deg);
+	}
+	.inform{
+		width: 700px;
+		height: 250px;
+		border: 5px solid black;
+		float: right;
+		font-size: 25px;
+		color: blue;
+		}
+</style>
+</head>
+<body>
+	<div id="page">
+	<header><span id="center">TRAVEL</span><img src="./img/j.PNG" width="30">
+		<div id="login">
+			로그인 | 회원가입 | 마이페이지 
+		</div>
+	</header>
+	<nav>
+		<div class="dropdown">
+		<ul>추천여행지<div class="dropdowncontents" id="g1">
+			<li>20대추천여행지</li><br>
+			<li>30대추천여행지</li><br>
+			<li>40대추천여행지</li><br>
+			<li>노후추천여행지</li>
+		</div>
+		</div>
+		</ul>
+		<div class="dropdown">
+		<ul>나만의여행지<div class="dropdowncontents" id="g2">
+			<li>찜한여행지</li><br>
+			<li>나를위한추천</li><br>
+			<li>나의태마여행지</li><br>
+			<li>안성맞춤여행지</li>
+		</div>
+		</div>
+		</ul>
+		<div class="dropdown">
+		<ul>주간BEST<div class="dropdowncontents" id="g3">
+			<li>주간아시아</li><br>
+			<li>주간유럽</li><br>
+			<li>주간미국</li><br>
+			<li>주간동남아</li>
+		</div>
+		</div>
+		</ul>
+		<div class="dropdown">
+		<ul>특별이벤트<div class="dropdowncontents" id="g4">
+			<li>응모이벤트</li><br>
+			<li>진행중인이벤트</li><br>
+			<li>당첨자확인</li><br>
+			<li>MORE</li>
+		</div>
+		</div>
+		</ul>
+		<div class="dropdown">
+		<ul>고객센터<div class="dropdowncontents" id="g5">
+			<li>고객의소리</li><br>
+			<li>마이페이지</li><br>
+			<li>접수된문의사항</li><br>
+			<li>MORE</li>
+		</div>
+		</div>
+		</ul>
+	
+	</nav>
+	<section >
+		<img src="./img/epl.PNG" >
+		<div class="inform">잉글랜드의 최상위 프로축구 리그이며 1992년에 출범하면서 종전까지 있었던 풋볼 리그 퍼스트 디비전(1부 리그)의 최상위 리그 포지션을 대체했다. <br>전세계 축구 리그 중 가장 많은 상업적 이윤을 발생시키는 리그이기도 하다.</div>
+	</section>
+	<div class="clear"></div>
+	<section >
+		<img src="./img/laliga.PNG" >
+		<div class="inform">스페인의 최상위 축구 리그. 정식 명칭은 스페인 1부 리그라는 뜻의 '프리메라 디비시온 데에스파냐(Primera División de España)'이나, 보통은 줄여서 라리가(La Liga)라고 부른다.</div>
+	</section>
+	<div class="clear"></div>
+	<section >
+		<img src="./img/league1.PNG" >
+		<div class="inform">프랑스의 1부 축구 리그. 프랑스와 모나코가 참가하는 축구 리그로서 리그 앙(Ligue Un)이라는 이름은 우리 식으로 말하면 1부 리그라는 뜻이다.</div>
+	</section>
+	<div class="clear"></div>
+	<section >
+		<img src="./img/seriea	.PNG" >
+		<div class="inform">총 4부로 구성된 이탈리아 프로 축구 리그 가운데 1부 리그를 가리킨다. 참고로 세리에 A의 뜻은 원래 그냥 1부 리그 정도의 의미다.</div>
+	</section>
+	<div class="clear"></div>
+	<section >
+		<img src="./img/bundesliga.PNG" >
+		<div class="inform">독일을 연고지로 하는, 유럽을 대표하는 축구 리그 중 하나. 독일 축구 연맹(Deutscher Fußball-Bund)이 주관하는 축구 리그이며. 독일의 축구리그에서의 최상위리그이다.</div>
+	</section>
+	<div class="clear"></div>
+	<footer>
+		<div id="adress"> 
+			주최 : 준모와 함께하는 즐거운 HTML교실 <br>
+			주관 : 준모 없이는 못살아 <br>
+			후원 : 준모가 세상에서 최고다 관광 
+		</div>
+		<div id="customer">
+			관광안내전화 : 01027191909
+		</div>
+	</footer>
+
+</body>
+</html>
