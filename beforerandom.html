@@ -2,7 +2,7 @@
 <html>
 <head>
 	<title></title>
-<style type="text/css">
+	<style>
 	*{
 		padding: 0 0;
 		margin: 0 0;
@@ -80,28 +80,22 @@
 		float: right;
 		margin-top: 30px 0 0 180px;
 	}
-	section img{
-		margin: 200px;
-		border: 10px solid black;
-	}
 	section{
-		font-size: 40px;
+		margin-left:5px; 
+	}
+	#first{
 		font-style: bold;
+		font-size: 20px;
+		border: solid 1px black;
+		padding: 10px;
+		width: 200px;
+		background-color: black;
+		color: white;
 	}
-	section img{
-	
-		transition: width 2s, transform 2s;
-		transition-timing-function: ease;
-	}
-	section img:hover{
-		margin: 0px;
-		width: 950px;
-		height: 500px;
-		transform: rotate(720deg);
-</style>
+	</style>
 </head>
 <body>
-	<div id="page">
+<div id="page">
 	<header><span id="center">TRAVEL</span><a href="./index.html"><img src="./img/j.PNG" width="30"></a>
 		<div id="login">
 			로그인 | 회원가입 | 마이페이지 
@@ -137,10 +131,10 @@
 		</ul>
 		<div class="dropdown">
 		<ul>특별이벤트<div class="dropdowncontents" id="g4">
-			<li><a href="./random.html"> 응모이벤트</a></li><br>
+			<li>응모이벤트</li><br>
 			<li>진행중인이벤트</li><br>
 			<li>당첨자확인</li><br>
-			<li><a href="./park.html">진행중인박람회</a></li>
+			<li>MORE</li>
 		</div>
 		</div>
 		</ul>
@@ -155,11 +149,18 @@
 		</ul>
 	
 	</nav>
-	<section>
-	<img src="./img/win.PNG">
+	<section id="first">
+		진행중인 이벤트 
 	</section>
 	<section>
-		경품 확인 ...!! ---- <a href="http://www.minsol1004.co.kr/bbs/zboard.php?id=diary&page=2&sn1=&divpage=1&sn=on&ss=off&sc=off&select_arrange=name&desc=desc&no=33&PHPSESSID=8200d6c6a6164f02ad020644d2ff5e9b"> 경품 목록 페이지 바로가기</a>
+		<a href="./random.html"><img src="./img/event1.PNG" width="150" height="200"></a>
+		<img src="./img/event5.PNG" width="150" height="200"><br>
+	</section>
+	<section id="first">
+		만료된 이벤트  
+	</section>
+	<section>
+		<img src="./img/event4.PNG" width="950" height="200">
 	</section>
 	<footer>
 		<div id="adress"> 
